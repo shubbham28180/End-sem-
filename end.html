@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyShop</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #eee;
+    margin: 0;
+}
+
+nav {
+    background: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    padding: 10px;
+    margin: 15px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    width: 180px;
+    animation: fade 2s;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+img {
+    width: 150px;
+    height: 120px;
+}
+
+button {
+    background: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: blue;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>MyShop</h2>
+<p>Home | Products | Cart | Contact</p>
+</nav>
+
+<center>
+<input type="text" placeholder="Search Products">
+</center>
+
+<h2 align="center">Our Products</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://placehold.co/150x120?text=Mobile">
+<h3>Mobile</h3>
+<p>₹15000</p>
+<p>20% OFF</p>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://placehold.co/150x120?text=Laptop">
+<h3>Laptop</h3>
+<p>₹45000</p>
+<p>10% OFF</p>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://placehold.co/150x120?text=Headphones">
+<h3>Headphones</h3>
+<p>₹2000</p>
+<p>15% OFF</p>
+<button>Buy Now</button>
+</div>
+
+</div>
+
+</body>
+</html>
